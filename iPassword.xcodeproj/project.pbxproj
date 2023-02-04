@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDF86162298E81E6006DAC5B /* iPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF86161298E81E6006DAC5B /* iPasswordApp.swift */; };
+		FDD48852298E829500990F6C /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD48851298E829500990F6C /* PasswordModel.swift */; };
+		FDD48856298E849700990F6C /* Content-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD48855298E849700990F6C /* Content-ViewModel.swift */; };
+		FDD48859298E867200990F6C /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD48858298E867200990F6C /* ViewModifiers.swift */; };
+		FDD4885D298E8DED00990F6C /* iPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4885C298E8DED00990F6C /* iPasswordApp.swift */; };
 		FDF86164298E81E6006DAC5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF86163298E81E6006DAC5B /* ContentView.swift */; };
 		FDF86166298E81E8006DAC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF86165298E81E8006DAC5B /* Assets.xcassets */; };
 		FDF86169298E81E8006DAC5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF86168298E81E8006DAC5B /* Preview Assets.xcassets */; };
@@ -34,8 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDD48851298E829500990F6C /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
+		FDD48855298E849700990F6C /* Content-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content-ViewModel.swift"; sourceTree = "<group>"; };
+		FDD48858298E867200990F6C /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		FDD4885C298E8DED00990F6C /* iPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordApp.swift; sourceTree = "<group>"; };
+		FDD4885E298E8E0100990F6C /* iPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordApp.swift; sourceTree = "<group>"; };
 		FDF8615E298E81E6006DAC5B /* iPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDF86161298E81E6006DAC5B /* iPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordApp.swift; sourceTree = "<group>"; };
 		FDF86163298E81E6006DAC5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDF86165298E81E8006DAC5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF86168298E81E8006DAC5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -71,9 +78,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDD48853298E82CC00990F6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDD48851298E829500990F6C /* PasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDD48854298E847800990F6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FDD48855298E849700990F6C /* Content-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FDD48857298E865600990F6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDF86163298E81E6006DAC5B /* ContentView.swift */,
+				FDD48858298E867200990F6C /* ViewModifiers.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FDF86155298E81E6006DAC5B = {
 			isa = PBXGroup;
 			children = (
+				FDD4885E298E8E0100990F6C /* iPasswordApp.swift */,
 				FDF86160298E81E6006DAC5B /* iPassword */,
 				FDF86171298E81E8006DAC5B /* iPasswordTests */,
 				FDF8617B298E81E8006DAC5B /* iPasswordUITests */,
@@ -94,8 +127,10 @@
 		FDF86160298E81E6006DAC5B /* iPassword */ = {
 			isa = PBXGroup;
 			children = (
-				FDF86161298E81E6006DAC5B /* iPasswordApp.swift */,
-				FDF86163298E81E6006DAC5B /* ContentView.swift */,
+				FDD4885C298E8DED00990F6C /* iPasswordApp.swift */,
+				FDD48857298E865600990F6C /* View */,
+				FDD48854298E847800990F6C /* ViewModel */,
+				FDD48853298E82CC00990F6C /* Model */,
 				FDF86165298E81E8006DAC5B /* Assets.xcassets */,
 				FDF86167298E81E8006DAC5B /* Preview Content */,
 			);
@@ -257,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD4885D298E8DED00990F6C /* iPasswordApp.swift in Sources */,
+				FDD48859298E867200990F6C /* ViewModifiers.swift in Sources */,
+				FDD48852298E829500990F6C /* PasswordModel.swift in Sources */,
 				FDF86164298E81E6006DAC5B /* ContentView.swift in Sources */,
-				FDF86162298E81E6006DAC5B /* iPasswordApp.swift in Sources */,
+				FDD48856298E849700990F6C /* Content-ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +458,13 @@
 				DEVELOPMENT_TEAM = 96DNG3HR9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +472,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,11 +492,13 @@
 				DEVELOPMENT_TEAM = 96DNG3HR9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +506,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
