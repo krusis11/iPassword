@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDF86162298E81E6006DAC5B /* iPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF86161298E81E6006DAC5B /* iPasswordApp.swift */; };
+		FDF86164298E81E6006DAC5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF86163298E81E6006DAC5B /* ContentView.swift */; };
+		FDF86166298E81E8006DAC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF86165298E81E8006DAC5B /* Assets.xcassets */; };
+		FDF86169298E81E8006DAC5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF86168298E81E8006DAC5B /* Preview Assets.xcassets */; };
+		FDF86173298E81E8006DAC5B /* iPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF86172298E81E8006DAC5B /* iPasswordTests.swift */; };
+		FDF8617D298E81E8006DAC5B /* iPasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8617C298E81E8006DAC5B /* iPasswordUITests.swift */; };
+		FDF8617F298E81E8006DAC5B /* iPasswordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8617E298E81E8006DAC5B /* iPasswordUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDF8616F298E81E8006DAC5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF86156298E81E6006DAC5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF8615D298E81E6006DAC5B;
+			remoteInfo = iPassword;
+		};
+		FDF86179298E81E8006DAC5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF86156298E81E6006DAC5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF8615D298E81E6006DAC5B;
+			remoteInfo = iPassword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDF8615E298E81E6006DAC5B /* iPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF86161298E81E6006DAC5B /* iPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordApp.swift; sourceTree = "<group>"; };
+		FDF86163298E81E6006DAC5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDF86165298E81E8006DAC5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF86168298E81E8006DAC5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDF8616E298E81E8006DAC5B /* iPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF86172298E81E8006DAC5B /* iPasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordTests.swift; sourceTree = "<group>"; };
+		FDF86178298E81E8006DAC5B /* iPasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF8617C298E81E8006DAC5B /* iPasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordUITests.swift; sourceTree = "<group>"; };
+		FDF8617E298E81E8006DAC5B /* iPasswordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDF8615B298E81E6006DAC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF8616B298E81E8006DAC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF86175298E81E8006DAC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDF86155298E81E6006DAC5B = {
+			isa = PBXGroup;
+			children = (
+				FDF86160298E81E6006DAC5B /* iPassword */,
+				FDF86171298E81E8006DAC5B /* iPasswordTests */,
+				FDF8617B298E81E8006DAC5B /* iPasswordUITests */,
+				FDF8615F298E81E6006DAC5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDF8615F298E81E6006DAC5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8615E298E81E6006DAC5B /* iPassword.app */,
+				FDF8616E298E81E8006DAC5B /* iPasswordTests.xctest */,
+				FDF86178298E81E8006DAC5B /* iPasswordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDF86160298E81E6006DAC5B /* iPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FDF86161298E81E6006DAC5B /* iPasswordApp.swift */,
+				FDF86163298E81E6006DAC5B /* ContentView.swift */,
+				FDF86165298E81E8006DAC5B /* Assets.xcassets */,
+				FDF86167298E81E8006DAC5B /* Preview Content */,
+			);
+			path = iPassword;
+			sourceTree = "<group>";
+		};
+		FDF86167298E81E8006DAC5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDF86168298E81E8006DAC5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDF86171298E81E8006DAC5B /* iPasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF86172298E81E8006DAC5B /* iPasswordTests.swift */,
+			);
+			path = iPasswordTests;
+			sourceTree = "<group>";
+		};
+		FDF8617B298E81E8006DAC5B /* iPasswordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8617C298E81E8006DAC5B /* iPasswordUITests.swift */,
+				FDF8617E298E81E8006DAC5B /* iPasswordUITestsLaunchTests.swift */,
+			);
+			path = iPasswordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDF8615D298E81E6006DAC5B /* iPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF86182298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPassword" */;
+			buildPhases = (
+				FDF8615A298E81E6006DAC5B /* Sources */,
+				FDF8615B298E81E6006DAC5B /* Frameworks */,
+				FDF8615C298E81E6006DAC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPassword;
+			productName = iPassword;
+			productReference = FDF8615E298E81E6006DAC5B /* iPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDF8616D298E81E8006DAC5B /* iPasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF86185298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPasswordTests" */;
+			buildPhases = (
+				FDF8616A298E81E8006DAC5B /* Sources */,
+				FDF8616B298E81E8006DAC5B /* Frameworks */,
+				FDF8616C298E81E8006DAC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF86170298E81E8006DAC5B /* PBXTargetDependency */,
+			);
+			name = iPasswordTests;
+			productName = iPasswordTests;
+			productReference = FDF8616E298E81E8006DAC5B /* iPasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDF86177298E81E8006DAC5B /* iPasswordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF86188298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPasswordUITests" */;
+			buildPhases = (
+				FDF86174298E81E8006DAC5B /* Sources */,
+				FDF86175298E81E8006DAC5B /* Frameworks */,
+				FDF86176298E81E8006DAC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF8617A298E81E8006DAC5B /* PBXTargetDependency */,
+			);
+			name = iPasswordUITests;
+			productName = iPasswordUITests;
+			productReference = FDF86178298E81E8006DAC5B /* iPasswordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDF86156298E81E6006DAC5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FDF8615D298E81E6006DAC5B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FDF8616D298E81E8006DAC5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FDF8615D298E81E6006DAC5B;
+					};
+					FDF86177298E81E8006DAC5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FDF8615D298E81E6006DAC5B;
+					};
+				};
+			};
+			buildConfigurationList = FDF86159298E81E6006DAC5B /* Build configuration list for PBXProject "iPassword" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDF86155298E81E6006DAC5B;
+			productRefGroup = FDF8615F298E81E6006DAC5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDF8615D298E81E6006DAC5B /* iPassword */,
+				FDF8616D298E81E8006DAC5B /* iPasswordTests */,
+				FDF86177298E81E8006DAC5B /* iPasswordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDF8615C298E81E6006DAC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF86169298E81E8006DAC5B /* Preview Assets.xcassets in Resources */,
+				FDF86166298E81E8006DAC5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF8616C298E81E8006DAC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF86176298E81E8006DAC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDF8615A298E81E6006DAC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF86164298E81E6006DAC5B /* ContentView.swift in Sources */,
+				FDF86162298E81E6006DAC5B /* iPasswordApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF8616A298E81E8006DAC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF86173298E81E8006DAC5B /* iPasswordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF86174298E81E8006DAC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF8617D298E81E8006DAC5B /* iPasswordUITests.swift in Sources */,
+				FDF8617F298E81E8006DAC5B /* iPasswordUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDF86170298E81E8006DAC5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF8615D298E81E6006DAC5B /* iPassword */;
+			targetProxy = FDF8616F298E81E8006DAC5B /* PBXContainerItemProxy */;
+		};
+		FDF8617A298E81E8006DAC5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF8615D298E81E6006DAC5B /* iPassword */;
+			targetProxy = FDF86179298E81E8006DAC5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDF86180298E81E8006DAC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDF86181298E81E8006DAC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDF86183298E81E8006DAC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDF86184298E81E8006DAC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDF86186298E81E8006DAC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPassword.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPassword";
+			};
+			name = Debug;
+		};
+		FDF86187298E81E8006DAC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPassword.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPassword";
+			};
+			name = Release;
+		};
+		FDF86189298E81E8006DAC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPassword;
+			};
+			name = Debug;
+		};
+		FDF8618A298E81E8006DAC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96DNG3HR9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.krusis.iPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPassword;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDF86159298E81E6006DAC5B /* Build configuration list for PBXProject "iPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF86180298E81E8006DAC5B /* Debug */,
+				FDF86181298E81E8006DAC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF86182298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF86183298E81E8006DAC5B /* Debug */,
+				FDF86184298E81E8006DAC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF86185298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF86186298E81E8006DAC5B /* Debug */,
+				FDF86187298E81E8006DAC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF86188298E81E8006DAC5B /* Build configuration list for PBXNativeTarget "iPasswordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF86189298E81E8006DAC5B /* Debug */,
+				FDF8618A298E81E8006DAC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDF86156298E81E6006DAC5B /* Project object */;
+}
