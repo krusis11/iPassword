@@ -25,15 +25,21 @@ struct ContentView: View {
                 
                         .foregroundColor(.blue)
                 }
+                
                 HStack(alignment: .center) {
                     Button("Delete All", action: vm.deleteAll)
                     .centerH()
                         ._colorMonochrome(.red)
                         .buttonStyle(.bordered)
+                
+                        
                     
                 }
                 
             }
+            
+            
+            
             Section("Passwords") {
                 List(vm.passwords) { password in
                     HStack {
@@ -42,7 +48,7 @@ struct ContentView: View {
                             .padding()
                             .textSelection(.enabled)
                             .deleteDisabled(false)
-                       
+                            
                             .contextMenu {
                                 Button {
                                     // Add this item to a list of favorites.
