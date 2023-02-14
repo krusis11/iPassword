@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 extension ContentView {
+    
     class ViewModel: ObservableObject{
         @Published var passwords: [Password] = []
         @Published var containsSymbols = true
@@ -16,9 +17,9 @@ extension ContentView {
         @Published var length = 10
         @Published var index = 0
         
-        init() {
-            createPassword()
-        }
+//        init() {
+//            createPassword()
+//        }
         
         func createPassword() {
             let alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -43,10 +44,6 @@ extension ContentView {
             }
             print(passwords.count)
             index += 1
-        }
-        func delete(at offsets: IndexSet){
-            
-            passwords.remove(atOffsets: offsets)
         }
         func deleteAll() {
             print(passwords)

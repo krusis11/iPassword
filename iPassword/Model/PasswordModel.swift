@@ -41,4 +41,14 @@ struct Password: Identifiable, Codable {
         return color
         }
     }
+struct deleting: Codable {
+    func print() {
+        Swift.print(Password.ID.self())
+    }
+
+    func delete() {
+        
+            }
+    
+}
 

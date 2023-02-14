@@ -12,7 +12,7 @@ extension View {
     func centerH() -> some View {
         HStack {
             Spacer()
-            self
+           self
             Spacer()
         }
     }
@@ -21,6 +21,7 @@ extension View {
         NavigationView {
             self
                 .navigationTitle(title)
+                
                 
         }
     }
