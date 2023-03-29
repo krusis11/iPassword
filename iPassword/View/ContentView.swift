@@ -9,7 +9,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct ContentView: View {
-    @StateObject private var vm = ViewModel()
+    @StateObject var vm = ViewModel()
     private let pastboard = UIPasteboard.general
     var body: some View {
         Form {
@@ -28,14 +28,11 @@ struct ContentView: View {
                 
                 HStack(alignment: .center) {
                     Button("Delete All", action: vm.deleteAll)
-                    .centerH()
+                        .centerH()
                         ._colorMonochrome(.red)
                         .buttonStyle(.bordered)
-                
-                        
                     
                 }
-                
             }
             
             
@@ -47,20 +44,22 @@ struct ContentView: View {
                         // .swipeActions(content: EditActions)
                             .padding()
                             .textSelection(.enabled)
-                            .deleteDisabled(false)
                             
                             .contextMenu {
                                 Button {
-                                    // Add this item to a list of favorites.
+                                    
                                     UIPasteboard.general.string = ("\(password.password)")
                                 } label: {
                                     Label("Kopiuj", systemImage: "doc.on.doc")
                                 }
                                 Button {
-                                    vm.passwords.remove(at: password.index)
+                                    vm.deleteEntry()
                                     print(password.id)
-                                    print(password.index)
-                                    print($vm.passwords.count)
+                                    vm.passwords.remove(at: password.index)
+                                    
+                                    
+                                    //print(password.index)
+                                   // print($vm.passwords.count)
                                         
                                     
                                 } label: {
@@ -75,8 +74,8 @@ struct ContentView: View {
                     }
                     .onTapGesture() {
                         print(password.id, password.password, password.index)
-                        
-                        
+                      
+        
                     }
                 }
                 

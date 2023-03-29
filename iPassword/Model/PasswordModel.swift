@@ -8,12 +8,16 @@
 import Foundation
 import SwiftUI
 
+
 struct Password: Identifiable, Codable {
-    var id=UUID()
+    public var id = UUID()
     var password: String
     var containsSymbols: Bool
     var containsUppercase: Bool
     var index: Int
+    //public var myID = Int(id)
+    
+
     
     var strengthColor: Color {
         var strength = 0
@@ -44,11 +48,10 @@ struct Password: Identifiable, Codable {
 struct deleting: Codable {
     func print() {
         Swift.print(Password.ID.self())
+      //  $vm.password.remove(at: id)
     }
 
-    func delete() {
-        
-            }
+  
     
 }
 

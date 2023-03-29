@@ -10,12 +10,13 @@ import SwiftUI
 
 extension ContentView {
     
-    class ViewModel: ObservableObject{
+    class ViewModel: ObservableObject, Identifiable{
         @Published var passwords: [Password] = []
         @Published var containsSymbols = true
         @Published var containsUppercase = true
         @Published var length = 10
         @Published var index = 0
+        
         
 //        init() {
 //            createPassword()
@@ -25,6 +26,7 @@ extension ContentView {
             let alphabet = "abcdefghijklmnopqrstuvwxyz"
             var base = alphabet + "1234567890"
             var newPassword = ""
+            
             
             if containsSymbols {
                 base += "!@#$%^&*()"
@@ -40,15 +42,19 @@ extension ContentView {
             
             withAnimation {
                 passwords.insert(password, at: 0)
+                index += 1
                 
             }
             print(passwords.count)
-            index += 1
+                    //s index += 1
         }
         func deleteAll() {
             print(passwords)
             passwords.removeAll(keepingCapacity: true)
-            index = 0
+            
+        }
+        func deleteEntry() {
+           //passwords.remove(at: .onTapGesture)
         }
     }
 }
